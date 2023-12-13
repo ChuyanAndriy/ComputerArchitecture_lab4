@@ -5,10 +5,10 @@ export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-eabi/bin:$PATH
 export ARCH=arm
 export CROSS_COMPILE='ccache arm-eabi-'
 
-cd ~/Lab3/HelloWorld/
+cd $PWD
 
-make -f Makefile clean
-make -f Makefile
+make clean
+make 
 
 cp hello1.ko ~/repos/busybox/_install
 cp hello2.ko ~/repos/busybox/_install
